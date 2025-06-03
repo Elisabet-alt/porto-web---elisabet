@@ -1,0 +1,561 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+/* Fixed Header */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 13vh;
+  background-color: #191919;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fixed-header nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Main Area */
+main {
+  padding-top: 15vh;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+/* Beri margin top untuk gallery agar tidak tertutup area hitam */
+.gallery-container {
+    margin-top: 15vh; /* Lebih dari 13vh untuk spacing */
+}
+body.custom::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 13vh; /* 13% dari viewport height */
+    background: #191919;
+    z-index: -1;
+}
+.home-button{
+    border: none;
+      background: none;
+      cursor: pointer;
+      padding: 0;
+}
+    .home-button img {
+      width: 50px; /* atur ukuran sesuai kebutuhan */
+      height: auto;
+      transition: transform 0.2s;
+      margin-top: 35px;
+      margin-left: 30px;
+}
+
+.work-button:hover {
+    text-decoration: underline;
+    color: #004080;
+}
+
+.container {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.top-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Selebar container */
+    height: 100px; /* Setengah tinggi container */
+    background-color: white;
+}
+
+.bottom-color {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Selebar container */
+    height: 100px; /* Setengah tinggi container */
+    background-color: #191919;
+}
+
+.exp-button {
+  position: fixed;
+  top: 40px;            /* Jarak dari bawah layar */
+  left: 300px;               /* Di tengah horizontal */
+  transform: translateX(-50%);
+  background: none;
+  border: none;
+  color: whitesmoke;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  padding: 10px 20px;
+  z-index: 999;
+  position: absolute;
+}
+.exp-button:hover,
+.exp-button:active {
+    color: black;
+}
+
+.project-button {
+  position: fixed;
+  top: 40px;            /* Jarak dari bawah layar */
+  left: 450px;               /* Di tengah horizontal */
+  transform: translateX(-50%);
+  background: none;
+  border: none;
+  color: whitesmoke;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  padding: 10px 20px;
+  z-index: 999;
+  position: absolute;
+}
+.project-button:hover,
+.project-button:active {
+    color: black;
+}
+
+.organisasi-button {
+  position: fixed;
+  top: 40px;            /* Jarak dari bawah layar */
+  left: 600px;               /* Di tengah horizontal */
+  transform: translateX(-50%);
+  background: none;
+  border: none;
+  color: whitesmoke;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  padding: 10px 20px;
+  z-index: 999;
+  position: absolute;
+}
+.organisasi-button:hover,
+.prganisasi-button:active {
+    color: black;
+}
+
+.certif-button {
+  position: fixed;
+  top: 40px;            /* Jarak dari bawah layar */
+  left: 780px;               /* Di tengah horizontal */
+  transform: translateX(-50%);
+  background: none;
+  border: none;
+  color: whitesmoke;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  padding: 10px 20px;
+  z-index: 999;
+  position: absolute;
+}
+.certif-button:hover,
+.certif-button:active {
+    color: black;
+}
+
+.heading {
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  /* font-weight: 60; */
+}
+.heading.sinarmas {
+    font-size: 2rem;
+  margin-left: 70px;
+  margin-top: 13px;
+  color: black;
+}
+.heading.aeon {
+font-size: 2rem;
+  margin-left: 140px;
+  margin-top: 25px;
+  color: black;
+}
+
+.subheading {
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  /* font-weight: 60; */
+  font-size: 1rem;
+}
+.subheading.sinarmas {
+  margin-top: -10px;
+  color: black;
+  font-style: italic;
+    margin-left: -5px;
+}
+.subheading.aeon {
+    margin-top: 90px;
+  color: black;
+  font-style: italic;
+    margin-left: 50px;
+}
+
+
+.datesml {
+    margin-right: 3px;
+    text-align: right;
+    color: black;
+    margin-top: -80px;
+}
+.dateaeon{
+    margin-right: 3px;
+    text-align: right;
+    color: black;
+    margin-top: -10px;
+}
+
+.sml{
+    left: 50px;
+    top: 110px;
+    position: absolute;
+    height: 60px;
+}
+
+.aeon {
+    left: -3px;
+    position: absolute;
+    top: 750px;
+    height: 100px;
+}
+
+/* function foto */
+.body.img {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 1000px;
+}
+ .gallery-container {
+    width: 100%;
+    max-width: 500px;      /* ubah ini sesuai kebutuhan */
+    height: 300px;         /* tambahkan jika ingin tinggi spesifik */
+    margin: auto;          /* untuk horizontal center */
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+    overflow: hidden;
+    position: relative;
+    bottom: -35px;
+ }
+
+/* .gallery-container.aeon {
+    width: 100%;
+    max-width: 100%; 
+    height: auto;
+    margin: auto;         
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+    overflow: hidden;
+    position: relative;
+    bottom: -35px;
+} */
+.gallery-container.aeon {
+  max-width: 400px; /* atau 100% tergantung layout */
+  height: 300px; /* buat tinggi pasti agar gambar portrait tidak tumpah */
+  margin: auto;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+  overflow: hidden;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 100px;
+}
+
+.gallery-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Sesuaikan dengan tinggi container */
+    overflow: hidden;
+}
+
+        .gallery-track {
+            display: flex;
+            height: 100%;
+            transition: transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            will-change: transform;
+        }
+
+.gallery-slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #f8f9fa;
+}
+.gallery-image,
+.gallery-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Lebih aman agar cover semua area */
+    object-position: center;
+    transition: transform 0.3s ease;
+    display: block;
+    position: relative;
+}
+.gallery-image.aeon,
+.gallery-video.aeon {
+  width: 100%;         /* tidak penuhi seluruh lebar */
+  height: 100%;        /* penuhkan tinggi container */
+  max-width: 100%;     /* jangan melebihi lebar container */
+  object-fit: contain; /* jaga rasio gambar */
+  display: block;
+  margin: auto;
+  top: auto;
+}
+        .gallery-slide:hover .gallery-image,
+        .gallery-slide:hover .gallery-video {
+            transform: scale(1.02);
+        }
+.gallery-slide:hover .gallery-image.aeon,
+.gallery-slide:hover .gallery-video.aeon {
+    transform: scale(1.02);
+        }
+
+.media-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: white;
+    padding: 20px;
+    z-index: 2;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+}
+.gallery-image.loaded {
+    opacity: 1;
+}
+
+        .gallery-slide:hover .media-overlay {
+            transform: translateY(0);
+        }
+
+        .media-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .media-description {
+            font-size: 15px;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        .progress-bar {
+            height: 6px;
+            background: rgba(255,255,255,0.2);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            width: 0%;
+            transition: width 0.3s ease;
+            position: relative;
+        }
+
+        .progress-fill::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: linear-gradient(
+                to right,
+                transparent,
+                rgba(255,255,255,0.8),
+                transparent
+            );
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .slide-counter {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0,0,0,0.6);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            z-index: 10;
+            backdrop-filter: blur(10px);
+        }
+
+        .auto-indicator {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(255, 107, 107, 0.9);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            z-index: 10;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.7; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+
+        /* Smooth entrance animation */
+        .gallery-slide {
+            opacity: 0;
+            animation: slideIn 1s ease-out forwards;
+        }
+
+        .gallery-slide.active {
+            opacity: 1;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Loading state for images */
+        .gallery-image {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .gallery-image.loaded {
+            opacity: 1;
+        }
+
+        /* Video specific styles */
+        .gallery-video {
+            background: #000;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .gallery-container {
+                border-radius: 15px;
+            }
+            
+            .gallery-wrapper {
+                height: 350px;
+            }
+            
+            .media-title {
+                font-size: 18px;
+            }
+            
+            .media-description {
+                font-size: 13px;
+            }
+            
+            .media-overlay {
+                padding: 30px 20px 20px;
+            }
+            
+            .slide-counter {
+                top: 15px;
+                right: 15px;
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+            
+            .auto-indicator {
+                bottom: 15px;
+                left: 15px;
+                font-size: 11px;
+                padding: 6px 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-wrapper {
+                height: 280px;
+            }
+            
+            .media-title {
+                font-size: 16px;
+            }
+            
+            .media-description {
+                font-size: 12px;
+            }
+        }
+
+        /* Optional: Subtle animations */
+        .gallery-container {
+            animation: containerEntrance 1.5s ease-out;
+        }
+
+        @keyframes containerEntrance {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
